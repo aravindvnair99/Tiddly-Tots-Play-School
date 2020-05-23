@@ -21,8 +21,26 @@ app.set("view engine", "ejs");
 
 ===============================================>>>>>*/
 
-app.get("/offline", (req, res) => {
-	res.render("offline");
+app.get("/about", (req, res) => {
+	res.render("about");
+});
+app.get("/blog", (req, res) => {
+	res.render("blog");
+});
+app.get("/contact", (req, res) => {
+	res.render("contact");
+});
+app.get("/home", (req, res) => {
+	res.render("home");
+});
+app.get("/landing", (req, res) => {
+	res.render("landing");
+});
+app.get("/pricing", (req, res) => {
+	res.render("pricing");
+});
+app.get("/programs", (req, res) => {
+	res.render("programs");
 });
 
 /*=============================================>>>>>
@@ -33,9 +51,6 @@ app.get("/offline", (req, res) => {
 
 app.use((req, res, next) => {
 	res.status(404).render("404");
-});
-app.use((req, res, next) => {
-	res.status(500).render("500");
 });
 
 /*=============================================>>>>>
