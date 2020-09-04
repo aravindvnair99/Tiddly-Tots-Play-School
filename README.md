@@ -1,4 +1,4 @@
-# Tiddly Tots Play School
+# Tiddly Tots Play School ![](https://komarev.com/ghpvc/?username=AravindVNair99&label=Views)
 
 Official source code of Tiddly Tots Play School website.
 
