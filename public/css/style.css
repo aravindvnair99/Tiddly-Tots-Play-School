@@ -155,7 +155,7 @@ b {
 }
 
 .wrap-line {
-	margin: 20px 0 50px 0;
+	margin: 20px 0 50px;
 	position: relative;
 }
 
@@ -325,7 +325,7 @@ a.btn {
 
 .input-group-btn:last-child > .btn {
 	margin: 0 !important;
-	padding: 12px 13px 13px 13px;
+	padding: 12px 13px 13px;
 	line-height: 1.392;
 	border: none;
 }
@@ -425,7 +425,7 @@ a.btn.btn-border-white:focus {
 
 .form-control {
 	height: 50px;
-	padding: 15px 0 13px 0;
+	padding: 15px 0 13px;
 	margin: 0 auto;
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	font-size: 14px;
@@ -728,7 +728,7 @@ label.message-text {
 }
 
 .full-info .navbar-links li {
-	transform: translate(0px, 0px);
+	transform: translate(0, 0);
 	opacity: 1;
 	visibility: visible;
 }

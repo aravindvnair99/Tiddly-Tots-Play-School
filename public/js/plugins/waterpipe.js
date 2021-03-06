@@ -10,7 +10,7 @@
  *  Credits: rectangleworld.com
  */
 
-;(function ( $, window, document, undefined ) {
+(function ( $, window, document, undefined ) {
     var pluginName = "waterpipe",
         defaults = {
             //Smoke
