@@ -2,8 +2,7 @@ name: Firebase CD
 on:
   push:
     branches:
-      - master
-      - v1.0.0
+      - main
 
 jobs:
   deploy:
@@ -11,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@master
-      - name: Install Dependencies
-        run: cd functions/ && npm install
+        uses: actions/checkout@main
+      - name: Install Back-end Dependencies
+        run: cd functions/ && npm i
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
