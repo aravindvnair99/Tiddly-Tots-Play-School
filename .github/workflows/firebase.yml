@@ -1,9 +1,8 @@
 name: Firebase CD
 on:
-  push:
-    branches:
-      - master
-      - v1.0.0
+  release:
+    types: [published]
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -11,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@master
+        uses: actions/checkout@main
       - name: Install Dependencies
         run: cd functions/ && npm install
       - name: Deploy to Firebase
