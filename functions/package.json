@@ -2,23 +2,15 @@
 	"name": "tiddly-tots-play-school",
 	"version": "0.0.2",
 	"description": "Tiddly Tots Play School PWA",
-	"keywords": [
-		"PWA",
-		"education",
-		"play school"
-	],
-	"man": [
-		"../README.MD"
-	],
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/aravindvnair99/Tiddly-Tots-Play-School.git"
 	},
-	"author": "Contributors",
+	"author": "Aravind V Nair (https://github.com/AravindVNair99)",
 	"contributors": [
 		{
-			"name": "Aravind V Nair",
-			"url": "https://github.com/AravindVNair99"
+			"name": "Nuha S Varier",
+			"url": "https://github.com/Nuha123"
 		}
 	],
 	"license": "",
@@ -28,7 +20,7 @@
 	"homepage": "https://tiddlytotsschool.com",
 	"scripts": {
 		"lint": "eslint .",
-		"serve": "firebase serve --only functions",
+		"serve": "firebase emulators:start --only functions",
 		"shell": "firebase functions:shell",
 		"start": "npm run shell",
 		"deploy": "firebase deploy --only functions",
