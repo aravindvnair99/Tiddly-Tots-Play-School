@@ -17,6 +17,11 @@ app.set("view engine", "ejs");
 
 ===============================================>>>>>*/
 
+app.get("/", (_req, res) => {
+	res.status(404).send(
+		"HTTP 404<br><br>Hey Nuha! Decide on one! <a href='/home'>Home</a> or <a href='/landing'>Landing</a>?"
+	);
+});
 app.get("/about", (_req, res) => {
 	res.render("about");
 });
