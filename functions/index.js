@@ -1,5 +1,5 @@
-const functions = require("firebase-functions");
-const express = require("express");
+const functions = require("firebase-functions"),
+	express = require("express");
 const app = express();
 
 /* =============================================>>>>>
