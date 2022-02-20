@@ -1,51 +1,42 @@
 {
 	"name": "tiddly-tots-play-school",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Tiddly Tots Play School PWA",
-	"keywords": [
-		"PWA",
-		"education",
-		"play school"
-	],
-	"man": [
-		"../README.MD"
-	],
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/aravindvnair99/Tiddly-Tots-Play-School.git"
 	},
-	"author": "Contributors",
+	"author": "Aravind V Nair (https://github.com/AravindVNair99)",
 	"contributors": [
 		{
-			"name": "Aravind V Nair",
-			"url": "https://github.com/AravindVNair99"
+			"name": "Nuha S Varier",
+			"url": "https://github.com/Nuha123"
 		}
 	],
-	"license": "",
+	"license": "https://github.com/aravindvnair99/Tiddly-Tots-Play-School/blob/main/LICENSE",
 	"bugs": {
 		"url": "https://github.com/aravindvnair99/Tiddly-Tots-Play-School/issues"
 	},
 	"homepage": "https://tiddlytotsschool.com",
 	"scripts": {
 		"lint": "eslint .",
-		"serve": "firebase serve --only functions",
+		"serve": "firebase emulators:start --only functions",
 		"shell": "firebase functions:shell",
 		"start": "npm run shell",
 		"deploy": "firebase deploy --only functions",
 		"logs": "firebase functions:log"
 	},
 	"engines": {
-		"node": "10"
+		"node": "14"
 	},
 	"dependencies": {
 		"ejs": "^3.1.6",
-		"express": "^4.17.3",
 		"firebase-admin": "^10.0.2",
 		"firebase-functions": "^3.18.1"
 	},
 	"devDependencies": {
 		"eslint": "^8.9.0",
-		"eslint-plugin-promise": "^6.0.0",
+		"eslint-config-google": "^0.14.0",
 		"firebase-functions-test": "^0.3.3"
 	},
 	"private": true
